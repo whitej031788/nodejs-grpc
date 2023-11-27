@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-grpc",
+  "version": "1.0.0",
+  "description": "Sample NodeJS and gRPC application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pb:gen": "./scripts/gen.sh greet calculator",
+    "greet:server": "node greet/server/index.js",
+    "greet:client": "node greet/client/index.js",
+    "calc:server": "node calculator/server/index.js",
+    "calc:client": "node calculator/client/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "1.8.12",
+    "google-protobuf": "^3.21.2"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.12.4"
+  }
+}
